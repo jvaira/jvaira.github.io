@@ -16,110 +16,110 @@
 			#gradient blockquote { width: 200px; }
 			#background div { border: 1px solid #ccc; width: 95%; height: 300px; margin-bottom: 5px; }
 			/* end default styles DO NOT change */
-			
+
 			/***************************************
 			 NOTES about selectors for your reference
-			 
+
 			Element Type Selector
 			p {property: value;}
-			
+
 			Grouped selectors
 			p, h1, h2 {property: value;}
-			
+
 			Descendant (contextual) selector
 			ol li {property: value;}
-			
+
 			ID selector
 			#sidebar {property: value;}
 			div#sidebar {property: value;}
-			
+
 			Class selector
 			p.warning {property: value;}
 			.warning {property: value;}
-			
+
 			Universal selector
 			* {property: value;}
 			****************************************/
-			
+
 			/* START HERE: Add your rules below. Change * { } to the rule you need to right the rule that has been described */
-			
+
 			/* Rules for Text Examples */
-			* { } /* make all text in the paragraphs center aligned */
-			* { } /* make odd paragraphs bold with a font of "helvetica" */
-			* { } /* make even paragraphs use font "courier" */
-			* { } /* ID textEx1 should have font size of 1.5 em */
-			* { } /* ID textEx2 should have font size of 1.4 em */
+			#text p { text-align: center;} /* make all text in the paragraphs center aligned */
+			p.odd { font-weight: bold; font-family: "Helvetica", sans-serif;} /* make odd paragraphs bold with a font of "helvetica" */
+			p.even { font-family: "Courier", serif;} /* make even paragraphs use font "courier" */
+			#textEx1 { font-size: 1.5em;} /* ID textEx1 should have font size of 1.5 em */
+			#textEx2 { font-size: 1.4em;} /* ID textEx2 should have font size of 1.4 em */
 			#textEx3 { font-size: 1.3em; } /* ID textEx3 should have font size of 1.3 em */
-			* { } /* ID textEx4 should have font size of 1.2 em */
-			* { } /* ID textEx5 should have font size of 1.1 em */
-			* { } /* ID textEx6 should have font size of 1.0 em */
-			* { } /* ID textEx7 should have font size of 0.9 em */
-			* { } /* ID textEx8 should have font size of 0.8em and line height of 3em; */
-			
+			#textEx4 { font-size: 1.2em;} /* ID textEx4 should have font size of 1.2 em */
+			#textEx5 { font-size: 1.1em;} /* ID textEx5 should have font size of 1.1 em */
+			#textEx6 { font-size: 1.0em;} /* ID textEx6 should have font size of 1.0 em */
+			#textEx7 { font-size: 0.9em;} /* ID textEx7 should have font size of 0.9 em */
+			#textEx8 { font-size: 0.8em;} /* ID textEx8 should have font size of 0.8em and line height of 3em; */
+
 			/* Rules for List Examples */
-			* { } /* first list should have squares for bullets */
+			#list ul.list1 { list-style-type: square;} /* first list should have squares for bullets */
 			#list ul.list1 { font-family: helvetica; } /* first list should use "helvetica" */
-			* { } /* first list should have a font size of 12px */
-			* { } /* The titles of songs should be 16px in size and have a color of #ff0000 */
-			* { } /* The year should be bold, 25px in size, use helvetica and have a color of #0000ff */
-			
-			* { } /* list 2 should use upper-roman for bullets */
-			* { } /* list 2 odd items should be red and uppercase */
-			* { } /* list 2 even items should be green */
+			#list ul.list1 { font-size: 12px;} /* first list should have a font size of 12px */
+			#list ul.list1 .title { font-size: 16px; color: #ff0000;} /* The titles of songs should be 16px in size and have a color of #ff0000 */
+			#list ul.list1 .year { font-weight: bold; font-size: 25px; font-family: "Helvetica", sans-serif; color: #0000ff;} /* The year should be bold, 25px in size, use helvetica and have a color of #0000ff */
+
+			#list ol.list2 { list-style-type: upper-roman;} /* list 2 should use upper-roman for bullets */
+			#list ol.list2 li.odd { color: red; text-transform: uppercase;} /* list 2 odd items should be red and uppercase */
+			#list ol.list2 li.even { color: green;} /* list 2 even items should be green */
 			#list ol.list2 li.even .city { font-size: 1.5em; } /* city in list 2 in even rows should have a font size of 1.5em */
-			* { } /* state in list 2 in even rows should have a font size of 1.3em */
-			* { } /* populate in all items should be 2.0em in size and bold */
-			
-			* { } /* list 3 bullets should be decimals with leading zeros */
-			* { } /* list 3 first list item should have a line-through the text */
+			#list ol.list2 li.even .state { font-size: 1.3em;} /* state in list 2 in even rows should have a font size of 1.3em */
+			#list ol.list2 .pop { font-size: 2.0em; font-weight: bold;} /* populate in all items should be 2.0em in size and bold */
+
+			#list ol.list3 { list-style-type: decimal-leading-zero;} /* list 3 bullets should be decimals with leading zeros */
+			#list ol.list3 li:first-child { text-decoration: line-through;} /* list 3 first list item should have a line-through the text */
 			#list ol.list3 li:last-child { text-decoration: line-through; } /* list 3 last child should have a line-through the text */
-			* { } /* 12th item in lest 3 should  have a line-through the text */
-			
+			#list ol.list3 li:nth-child(12) { text-decoration: line-through;} /* 12th item in lest 3 should  have a line-through the text */
+
 			/* Rules for Background Examples */
-			* { } /* all blocks should underline the text in them */
-			* { } /* block 1 should use tile1.jpg to fill the background, have a font that is blue with a size of 3em and centered */
-			* { } /* block 2 should use tile2.jpg to tile across the top only, have a font that is red with a size of 3em and centered */
-			#block3 { background-image:url(tile3.jpg); background-repeat: repeat-y; color: green; font-size: 3em; text-align: right; } /* block 3 should use tile3.jpg to tile only the left side, have a font that is green with a size of 3em and right justified */ 
-			* { } /* block 4 should use tile4.jpg to tile only across the bottom, have an orange font of size 3em and right justified */
-			* { } /* block 5 should use tile5.jpg with no tiling and positioned in the center, have a font that is gray in color, 3em in szie and centered */  
-			
+			#block1, #block2, #block3, #block4, #block5 { text-decoration: underline;} /* all blocks should underline the text in them */
+			#block1 { background-image: url(tile1.jpg); color: blue; font-size: 3em; text-align: center;} /* block 1 should use tile1.jpg to fill the background, have a font that is blue with a size of 3em and centered */
+			#block2 { background-image: url(tile2.jpg); background-repeat: repeat-x; color: red; font-size: 3em; text-align: center;} /* block 2 should use tile2.jpg to tile across the top only, have a font that is red with a size of 3em and centered */
+			#block3 { background-image:url(tile3.jpg); background-repeat: repeat-y; color: green; font-size: 3em; text-align: right; } /* block 3 should use tile3.jpg to tile only the left side, have a font that is green with a size of 3em and right justified */
+			#block4 { background-image: url(tile4.jpg); background-repeat: repeat-x; background-position: bottom; color: orange; font-size: 3em; direction: rtl; text-align: justify;} /* block 4 should use tile4.jpg to tile only across the bottom, have an orange font of size 3em and right justified */
+			#block5 { background-image: url(tile5.jpg); background-repeat: no-repeat; background-position: center; color: gray; font-size: 3em; text-align: center;} /* block 5 should use tile5.jpg with no tiling and positioned in the center, have a font that is gray in color, 3em in szie and centered */
+
 			/* Rules for Gradient Examples */
-			
-			* { } /* linear gradient left to right going from yellow to green */
+
+			#gradient blockquote.quote1 { background-image: linear-gradient(to right, yellow, green);} /* linear gradient left to right going from yellow to green */
 			#gradient blockquote.quote2 { background-image: linear-gradient(to left, yellow, green); } /* linear gradient right to left going from yellow to green */
-			* { } /* linear gradient top to bottom going from yellow to green */
-			* { } /* linear gradient bottom to top going from yellow to green */
+			#gradient blockquote.quote3 { background-image: linear-gradient(to bottom, yellow, green);} /* linear gradient top to bottom going from yellow to green */
+			#gradient blockquote.quote4 { background-image: linear-gradient(to top, yellow, green);} /* linear gradient bottom to top going from yellow to green */
 			#gradient blockquote.quote5 { background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); }
-			* { } /* linear gradient right to left going from silver to teal */
-			* { } /* linear gradient top to bottom going from silver to teal */
-			* { } /* linear gradient bottom to top going from silver to teal */
-			* { } /* background blue font color #fff */
-			* { } /* background green font color #fff */
-					
+			#gradient blockquote.quote6 { background-image: linear-gradient(to left, silver, teal);} /* linear gradient right to left going from silver to teal */
+			#gradient blockquote.quote7 { background-image: linear-gradient(to bottom, silver, teal);} /* linear gradient top to bottom going from silver to teal */
+			#gradient blockquote.quote8 { background-image: linear-gradient(to top, silver, teal);} /* linear gradient bottom to top going from silver to teal */
+			#gradient blockquote.quote9 { background-color: blue; color: #fff;} /* background blue font color #fff */
+			#gradient blockquote.quote10 { background-color: green; color: #fff;} /* background green font color #fff */
+
 			/* Rules for Pseudo Element and Class Selector Examples */
-			* { } /* first level of bullets in table of contents should be upper-roman */
-			* { } /* second level of bullets in table of contents  should be decimal */
-			* { } /* third level of bullets in table of contents  should be lower alpha */
-	
-			* { } /* first level of items in table of contents  text should have a text shadow of read that is offset to the right and down by 1px */
-			* { } /* no shadow on rest of items in table of contents */
-			* { } /* first item in each third level should be bold */
-			* { } /* second item in each third level shold be the color blue */
-			
-			* { } /* all text in under class receipt should be size 14px use font "monospace" and have the color lime */
-			
+			ol.toc { list-style-type: upper-roman;} /* first level of bullets in table of contents should be upper-roman */
+			ol.toc ol { list-style-type: decimal;} /* second level of bullets in table of contents  should be decimal */
+			ol.toc ol ol { list-style-type: lower-alpha;} /* third level of bullets in table of contents  should be lower alpha */
+
+			ol.toc { text-shadow: 1px 1px 0 red;} /* first level of items in table of contents  text should have a text shadow of read that is offset to the right and down by 1px */
+			ol.toc ol { text-shadow: none;} /* no shadow on rest of items in table of contents */
+			ol.toc ol ol li:first-child { font-weight: bold;} /* first item in each third level should be bold */
+			ol.toc ol ol li:nth-child(2) { color: blue;} /* second item in each third level shold be the color blue */
+
+			.recipe { font-size: 14px; font-family: monospace; color: lime !important;} /* all text in under class receipt should be size 14px use font "monospace" and have the color lime */
+
 			/* END HERE: The end of your rules */
-			
+
 		</style>
 	</head>
 <body>
-	
+
 	<div class="wrapper">
 
 		<h1>Mid Term Project</h1>
-		
+
 		<h2>CSS techniques</h2>
-		
+
 		<p class="menu">
 			<a href="#text" class="item1">Text Examples</a><br />
 			<a href="#list" class="item2">List Examples</a><br />
@@ -127,9 +127,9 @@
 			<a href="#gradient" class="item4">Gradient</a><br />
 			<a href="#pseudo" class="item5">Pseudo Element and Class Selector Examples</a><br />
 		</p>
-		
+
 		<hr />
-		
+
 		<div id="text">
 			<h3>Text Examples</h3>
 			<p id="textEx1" class="odd">My pappy said, "Son, you're gonna' drive me to drinkin'</p>
@@ -149,65 +149,65 @@
 		<div class="backToTop">
 			<a href="#top">Back to top</a>
 		</div>
-		
+
 		<div id="list">
 			<h3>Lists Examples</h3>
-			
+
 			<h4>Songs you should know from the 80s</h4>
 			<ul class="list1">
 				<li><span class="title">Kiss On My List, Hall & Oates</span> (<span class="year">1981</span>)<br />
-				
+
 				This song is so '80s! The slow tempo but hip-hop beat kind of draws you in right off the bat. And not to mention this is one of those romantic love songs, unlike in the '70s when they were romantic sex songs. Really, the only part anybody knows from this Hall & Oates song is the chorus, "Because your kiss, your kiss, is on my list/Because your kiss, your kiss, is on my list/Your kiss on my list of the best things in life." It's sweet.
 				</li>
-				
+
 				<li><span class="title">Jessie's Girl, Rick Springfield</span> (<span class="year">1981</span>)<br />
-				
+
 				One of the things that makes this song so good is that it's a jealousy song – and who can't relate to that?! It's kind of sweet, but really the whole song makes you feel bad for Rick because he wants Jessie's girl so bad that it hurts and he can't do anything about it because Jessie's his friend. The main lyrics, "Jessie's got himself a girl/And I want to make her mine/And she's watching him with those eyes/And she's lovin' him with that body, I just know it," are romantic and cute – but the jealousy is flowing out of his voice. Any age group can relate to this song.
 				</li>
-				
+
 				<li><span class="title">Jack and Diane, John Cougar Mellencamp</span> (<span class="year">1982</span>)<br />
-				
+
 				This was John Mellencamp's biggest single and we really like it, but we're not exactly sure why. It's a classic love song, from a third person perspective. The bass and clapping are what really make it musical and easy to sing to. But it's more-so the kind of song that you sing in the car, with the windows down in the summer, alongside a bunch of friends.
 				</li>
-				
+
 				<li><span class="title">Eye of the Tiger, Survivor</span> (<span class="year">1982</span>)<br />
-				
+
 				Eye of the Tiger is one of the original pump-up songs. Everything about it is preparing you to fight the fight, win that game or crush your opponent. It's motivational and bad-ass. That's it. Your kids really should already know this one, unless you raised them under a rock.
 				</li>
-				
+
 				<li><span class="title">I Love Rock 'n' Roll, Joan Jett & the Blackhearts</span> (<span class="year">1982</span>)<br />
-				
+
 				This song never gets old. This was a great rock song that came after its prime and thrived. Anybody who has heard this song before knows the words and can't help but sing along when they hear it. There isn't one specific thing that makes this song worth mentioning. It's the beat, the words, the way it makes you feel that gets you excited and happy.
 				</li>
-				
+
 				<li><span class="title">Total Eclipse of the Heart, Bonnie Tyler</span> (<span class="year">1983</span>)<br />
-				
+
 				Something about this slow rock song makes you want to scream it in the shower with a soap mic. The single sold well over nine million copies making Bonnie the first and only welsh singer to make one of the top spots on Billboards Top 100. It's a little bit sad but when  you're singing it, it just seems like everything you've felt after a breakup is somehow in words.
 				</li>
-				
+
 				<li><span class="title">Sweet Dreams, The Eurythmics</span> (<span class="year">1983</span>)<br />
-				
+
 				Well, we aren't the only ones who think this Eurythmics song is worth the mention. It topped charts in more than ten countries and has been covered by a handful of people. One of the weirdest, but strangely popular covers, was by Marilyn Manson and one of the more upbeat and happier covers came from Stereo Express. In fact, the band actually remixed it themselves and re-released the song in 1991. Pretty much everybody today has some version of this song to use in dance clubs – and with good reason.
 				</li>
-				
+
 				<li><span class="title">Every Breath You Take, The Police</span> (<span class="year">1983</span>)<br />
-				
+
 				This song was nominated for three GRAMMYs, which in itself is pretty impressive, and won one of them. This was also the song that held off "Sweet Dreams" from usurping the Number 1 spot for four weeks. It's a great example of one of the great things about the '80s. The two songs, "Every Breath You Take" and "Sweet Dreams" were released around the same time but they have completely different vibes and were both incredibly popular. This song is definitely a favorite though, just for Sting's lyrics. It's an interesting song that sounds mellow and sweet but the lyrics are a little darker and kind of intense: "Every breath you take, every move you make, I'll be watching you."
-				
+
 				</li>
-				
+
 				<li><span class="title">Maniac, Michael Sembello</span> (<span class="year">1983</span>)<br />
-				
+
 				This song got it's start from the film Flashdance (which is why the video is from the scene that includes the song). It's a good pairing too; the song screams '80s workout music. It's motivational, upbeat and it has an intensity…but the best/worst part is that it's one of those songs that stays in your head for hours, even though you only know the chorus.
 				</li>
-				
+
 				<li><span class="title">Down Under, Men At Work</span> (<span class="year">1981</span>)<br />
-				
+
 				This song topped the charts in Australia nearly overnight after its debut, but didn't even reach the US until late 1982. We think it is such a fun song because it's about Australia and what do we know about the outback? Plus nobody knows what they're talking about when they say Vegemite (eew!), but it sounds good in the song.
 				</li>
-			
+
 			</ul>
-			
+
 			<h4>Top 10 Largest Cities</h4>
 
 			<ol class="list2">
@@ -222,7 +222,7 @@
 				<li class="odd"><span class="city">Dallas</span>, <span class="state">Texas</span> - <span class="pop">1,300,092</span></li>
 				<li class="even"><span class="city">San Jose</span>, <span class="state">California</span> - <span class="pop">1,026,908</span></li>
 			</ol>
-			
+
 			<h4>Top 20 Most Used Words</h4>
 			<ol  class="list3">
 				<li>the</li>
@@ -244,15 +244,15 @@
 				<li>as</li>
 				<li>you</li>
 				<li>do</li>
-				<li>at</li>			
+				<li>at</li>
 			</ol>
-						
+
 		</div>
 
 		<div class="backToTop">
 			<a href="#top">Back to top</a>
 		</div>
-		
+
 		<div id="background">
 			<h3>Background Examples</h3>
 			<div id="block1">Block 1</div>
@@ -266,47 +266,47 @@
 		<div class="backToTop">
 			<a href="#top">Back to top</a>
 		</div>
-		
+
 		<div id="gradient">
 			<h3>Graident Examples</h3>
-			
+
 			<h4>Albert Einstein Quotes</h4>
-			
+
 			<h5 class="quote1">ON THE MEANING OF LIFE</h5>
 			<blockquote class="quote1">Only a life lived for others is a life worthwhile.</blockquote>
-			
+
 			<h5 class="quote2">ON PEACE</h5>
 			<blockquote class="quote2">Peace cannot be kept by force. It can only be achieved by understanding.</blockquote>
-			
+
 			<h5 class="quote3">ON WISDOM</h5>
 			<blockquote class="quote3">Wisdom is not a product of schooling but of the lifelong attempt to acquire it.</blockquote>
-			
+
 			<h5 class="quote4">ON BEING HUMAN</h5>
 			<blockquote class="quote4">A human being is a part of the whole, called by us "Universe", a part limited in time and space.</blockquote>
-			
+
 			<h5 class="quote5">ON GETTING THROUGH LIFE</h5>
 			<blockquote class="quote5">Life is like riding a bicycle. To keep your balance you must keep moving.</blockquote>
-			
+
 			<h5 class="quote6">ON SCIENCE </h5>
 			<blockquote class="quote6">All of science is nothing more than refinement of everyday thinking.</blockquote>
-			
+
 			<h5 class="quote7">ON MIRACLES</h5>
 			<blockquote class="quote7">There are two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.</blockquote>
-			
+
 			<h5 class="quote8">ON LOVE</h5>
 			<blockquote class="quote8">Gravitation is not responsible for people falling in love.</blockquote>
-			
+
 			<h5 class="quote9">ON SUCCESS</h5>
 			<blockquote class="quote9">The value of achievement lies in the achieving.</blockquote>
-			
+
 			<h5 class="quote10">ON GENIUS</h5>
-			<blockquote class="quote10">I have no special talents. I am only passionately curious.</blockquote>			
+			<blockquote class="quote10">I have no special talents. I am only passionately curious.</blockquote>
 		</div>
 
 		<div class="backToTop">
 			<a href="#top">Back to top</a>
 		</div>
-		
+
 		<div id="pseudo">
 			<h3>Pseudo Element and Class Selector Examples</h3>
 
@@ -387,7 +387,7 @@
 					</ol>
 				</li>
 			</ol>
-			
+
 			<hr />
 
 			<div class="recipe">
@@ -409,7 +409,7 @@
 					<dd>A pre-mixed combination of flour and leavening agents
 						(usually salt and baking powder).</dd>
 				</dl>
-	
+
 				<h2>Method</h2>
 				<ol>
 					<li>Preheat the oven to 190°C.</li>
@@ -429,7 +429,7 @@
 		<div class="backToTop">
 			<a href="#top">Back to top</a>
 		</div>
-		
+
 	</div>
 
 </body>
