@@ -1,0 +1,41 @@
+p {
+  background-color: #C2F670;
+  width: 200px;
+  height: 200px;
+}
+
+#p2 {
+  border: 4px solid gray;
+}
+
+#p3 {
+  border-right: 12px solid gray;
+  border-bottom: 12px solid gray;
+  border-style: ridge;
+}
+
+#p4 {
+  padding: 2em;
+}
+
+#p5 {
+  padding: 2em;
+  border: 4px solid red;
+}
+
+#p6 {
+  border: 2px solid red;
+  margin: 2em;
+}
+
+#p7 {
+  padding: 1em 1em 1em 6em;
+  border: 4px dashed black;
+  margin: 1em 6em;
+}
+
+#p8 {
+  padding: 1em 50px;
+  border: 2px solid blue;
+  overflow: scroll;
+}
