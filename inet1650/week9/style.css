@@ -9,9 +9,7 @@ p {
 }
 
 #p3 {
-  border-right: 12px solid gray;
-  border-bottom: 12px solid gray;
-  border-style: ridge;
+  box-shadow: 4px 4px 5px gray;
 }
 
 #p4 {
@@ -37,5 +35,5 @@ p {
 #p8 {
   padding: 1em 50px;
   border: 2px solid blue;
-  overflow: scroll;
+  margin: auto;
 }
