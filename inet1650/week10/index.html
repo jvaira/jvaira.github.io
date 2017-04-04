@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Float Example</title>
+	<style>
+		.photo img { height: 300px; margin-right: 8px;}
+		.thumbs li img {height: 80px; border-radius: 5px;}
+
+		body {
+			background-image: url("star-space-tile.jpg");
+		}
+
+		header ul {
+    list-style-type: none;
+		padding: 0;
+		margin: 0 auto;
+    overflow: hidden;
+		width: 18em;
+		}
+
+		.thumbs ul {
+			list-style-type: none;
+			padding: 0 0 0 2.5em;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+
+		.thumbs ul li {
+			margin: 5px;
+			padding-top: 3px;
+		}
+
+		li {
+	    float: left;
+		}
+
+		li a {
+	    display: block;
+	    text-align: center;
+			background-color: white;
+			color: black;
+	    padding: 14px;
+			margin: 10px;
+	    text-decoration: none;
+			font-family: sans-serif;
+			font-weight: bold;
+			border-radius: 6px;
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+			font-size: 4em;
+			font-family: sans-serif;
+		}
+
+		.droid {
+			background-color: #333333;
+			box-shadow: 0px 0px 5px 4px #8c8c8c;
+			color: white;
+			font-family: sans-serif;
+			font-size: 1.25em;
+			align-content: center;
+			margin: 2em 4em;
+			overflow: auto;
+		}
+
+		.desc {
+			padding: 8px;
+		}
+
+		h2 {
+			margin: 0 .25em;
+		}
+
+		div.droid:nth-child(odd) .photo img {
+			float: left;
+		}
+
+		div.droid:nth-child(even) .photo img {
+			 float: right;
+			 margin-right: 0;
+		 }
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Star Wars Astromech Droids</h1>
+			<ul>
+				<li><a href="#r2-d2">R2-D2</a></li>
+				<li><a href="#bb-8">BB-8</a></li>
+				<li><a href="#r5-d4">R5-D4</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="body">
+		<div class="droid">
+			<div class="photo"><img src="r2-d2.jpg" /></div>
+			<div class="desc">
+				<h2>R2-D2</h2>
+				Anakin Skywalker and Luke Skywalker in turn, showing great bravery in rescuing
+				his masters and their friends from many perils. A skilled starship mechanic and
+				fighter pilot's assistant, he formed an unlikely but enduring friendship with the
+				fussy protocol droid C-3PO.
+				<div class="thumbs">
+					<ul>
+						<li><img src="r2-d2-01.jpg"><div class="caption">Photo 1</div></li>
+						<li><img src="r2-d2-02.jpg"><div class="caption">Photo 2</div></li>
+						<li><img src="r2-d2-03.jpg"><div class="caption">Photo 3</div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="droid">
+			<div class="photo"><img src="bb-8.jpg" /></div>
+			<div class="desc">
+				<h2>BB-8</h2>
+				A skittish but loyal astromech, BB-8 accompanied Poe Dameron on many missions for the Resistance,
+				 helping keep his X-wing in working order. When Poe’s mission to Jakku ended with
+				his capture by the First Order, BB-8 fled into the desert with a vital clue to the location
+				 of Jedi Master Luke Skywalker.
+				<div class="thumbs">
+					<ul>
+						<li><img src="bb-8-01.jpg"><div class="caption">Photo 1</div></li>
+						<li><img src="bb-8-02.jpg"><div class="caption">Photo 2</div></li>
+						<li><img src="bb-8-03.jpg"><div class="caption">Photo 3</div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="droid">
+			<div class="photo"><img src="r5-d4.jpg" /></div>
+			<div class="desc">
+				<h2>R5-D4</h2>
+				A red astromech droid, R5-D4 thought he'd found a home when the Jawas sold him to Owen Lars,
+				along with the protocol droid C-3PO. But R5's motivator blew as he rolled away from the sandcrawler,
+				forcing the Jawas to take him back in exchange for R2-D2.
+				<div class="thumbs">
+					<ul>
+						<li><img src="r5-d4-01.jpg"><div class="caption">Photo 1</div></li>
+						<li><img src="r5-d4-02.jpg"><div class="caption">Photo 2</div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
